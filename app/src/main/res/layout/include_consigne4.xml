@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card4"
+    style="@style/cardConsigneStyle"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        style="@style/llVertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            style="@style/llHorizontal">
+
+            <ImageView
+                style="@style/imgConsigne"
+                android:src="@drawable/eternuer" />
+
+            <TextView
+                style="@style/tvConsigneStyle"
+                android:text="@string/qst_consigne4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_expand4"
+            style="@style/llVertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/tvConsigneHide"
+                android:text="@string/rsp_consigne4" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

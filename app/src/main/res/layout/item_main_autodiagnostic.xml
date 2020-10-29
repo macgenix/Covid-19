@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/smallCardStyle"
+    android:id="@+id/card_diagnostic"
+    app:cardCornerRadius="8dp"
+    android:background="?attr/selectableItemBackground"
+    app:cardElevation="6dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:id="@+id/rl_global"
+        android:background="#A76803"
+        style="@style/mixParent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_embleme"
+            style="@style/imgViewCardStyle"
+            android:src="@drawable/diagnostic"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tvCardStyle"
+            android:text="Diagnostic en ligne"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

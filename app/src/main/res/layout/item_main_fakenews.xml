@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/bigCardStyle"
+    android:id="@+id/card_solidarite"
+    app:cardCornerRadius="8dp"
+    android:background="?attr/selectableItemBackground"
+    app:cardElevation="6dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:id="@+id/rl_global"
+        android:background="#dd6453"
+        style="@style/mixParent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_embleme"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/covidefakenews"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tvCardStyle"
+            android:text="Traque Fake News"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

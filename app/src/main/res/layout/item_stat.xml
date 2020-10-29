@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_weight="1"
+    app:cardElevation="10dp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_location"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_ville"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brazzaville"
+                android:padding="10dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/tv_total_cas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 cas"
+                android:padding="10dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@drawable/congo">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80000000"
+                android:padding="8dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="24dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/cas_confirme"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whrite"
+                        android:padding="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_confirmer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="43 cas"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whrite"
+                        android:padding="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="24dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/cas_gueri"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whrite"
+                        android:padding="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_gueris"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11 cas"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whrite"
+                        android:padding="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="24dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/cas_deces" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whrite"
+                        android:padding="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_deces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 cas"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/whrite"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="#d8c165"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cas confirmés"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="#1a8e14"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cas guéris"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="#b41d0d"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cas décédés"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

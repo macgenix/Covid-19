@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="172dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <LinearLayout
+            android:id="@+id/ll_auteur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/img_actu"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source : "
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_auteur_actu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#830530"
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp"
+                android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_titre_actu"
+            android:layout_below="@+id/ll_auteur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/img_actu"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/textColor"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="4"
+            android:ellipsize="end"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_actu"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            app:riv_border_color="#00000000"
+            app:riv_border_width="3dip"
+            app:riv_corner_radius="10dip"
+            app:riv_oval="false"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_timing"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_actu"
+            android:layout_marginTop="24dp">
+            <ImageView
+                android:id="@+id/img_timing"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_timing" />
+            <TextView
+                android:id="@+id/tv_timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="il y a 2 heures"
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp"
+                android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/smallCardStyle"
+    android:id="@+id/card_quiz"
+    app:cardCornerRadius="8dp"
+    android:background="?attr/selectableItemBackground"
+    app:cardElevation="6dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:id="@+id/rl_global"
+        android:background="#D5B610"
+        style="@style/mixParent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_quiz"
+            style="@style/imgViewCardStyle"
+            android:src="@drawable/quiz"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tvCardStyle"
+            android:text="Quiz Time Covid-19"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

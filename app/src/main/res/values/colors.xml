@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="outLineColor">#99abb5</color>
+    <color name="textColor">#212121</color>
+    <color name="themeColor">#11CFC5</color>
+
+    <color name="Indicator_tabTextColor">#92B8B4</color>
+    <color name="Indicator_tabSelectedTextColor">#4C5CB6</color>
+    <color name="whrite">#FFF</color>
+
+    <color name="tv_vector">#B2DFDB</color>
+</resources>

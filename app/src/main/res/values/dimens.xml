@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="rb_size">10sp</dimen>
+
+    <!-- cardVie -->
+    <dimen name="smallCardHeight">240dp</dimen>
+    <dimen name="bigCardHeight">220dp</dimen>
+    <dimen name="imgCardHeight">100dp</dimen>
+
+    <integer name="anim_duration_long">1000</integer>
+</resources>
